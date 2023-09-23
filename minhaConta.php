@@ -25,7 +25,7 @@ session_start();
 <body class="bodyMyAccount">
     <div class="container-account">
         <p>Nome: <?=$array['nome']?></p>
-        <p>Email: <?=$array['email']?></p>
+        <p class="email" >Email: <?=$array['email']?></p>
         <a href="./mudarSenha.php">Mudar Senha</a>
     </div>    
 </body>

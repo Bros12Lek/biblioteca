@@ -10,8 +10,9 @@
  $res = $pdo->query($querry);
  $array = $res->fetchAll(PDO::FETCH_ASSOC);
 
- $_SESSION['usuario'];
- $_SESSION['login'];
+   
+ var_dump($_SESSION['usuario'], $_SESSION['login']);
+ 
 ?>
 
 <!DOCTYPE html>

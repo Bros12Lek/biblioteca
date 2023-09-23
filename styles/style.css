@@ -602,6 +602,17 @@ main .scrool .item img {
   width: 20%;
   height: 35%;
   border: thin solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.bodyMyAccount .container-account a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  bottom: 1rem;
 }
 
 * {

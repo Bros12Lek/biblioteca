@@ -1,8 +1,6 @@
 const senha = document.querySelector('#senha');
 const eyeClosed = document.querySelector('.seePass');
 
-
-
 eyeClosed.addEventListener('click' , (event) =>{
 
     if(senha.type === "password"){
@@ -14,5 +12,4 @@ eyeClosed.addEventListener('click' , (event) =>{
         senha.type = "password";
 
     }
-  
 })
