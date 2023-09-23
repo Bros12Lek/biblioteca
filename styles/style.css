@@ -1,0 +1,612 @@
+@import 'https://fonts.googleapis.com/css2?family=Croissant+One&family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@1,300&family=Raleway:ital,wght@1,300&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Croissant+One&family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@1,300&family=Raleway:ital,wght@1,300&family=Ruwudu&display=swap';
+header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  height: 9rem;
+  box-shadow: 3px 2px 28px 2px rgba(0, 0, 0, 0.7);
+  background-color: #eee;
+  position: relative;
+}
+header form button {
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  height: 2.5rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 15px;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+header form button.subForm {
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+header form button.subForm::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f9c4d2;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+header form button.subForm:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.25em);
+}
+header form button.subForm:hover::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.5em, -1em);
+}
+header form button.subForm:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+header form button.subForm:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
+}
+header .logo {
+  margin-top: 1%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+header .logo h1 {
+  font-family: Croissant One;
+  margin-left: 2%;
+}
+header #account {
+  border: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+header #account:hover {
+  background-color: rgba(75, 0, 130, 0.8);
+}
+header .login {
+  margin-top: 1%;
+  margin-right: 6%;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: 90%;
+  position: relative;
+  align-items: center;
+}
+header .login .on {
+  transition: all 0.8s;
+  opacity: 1;
+  background-color: #c27abd;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 2.8rem;
+  border-radius: 15px;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+}
+header .login .on a {
+  color: white;
+  text-decoration: none;
+}
+header .login .off, header .login .logOut {
+  transition: all 0.8s;
+  display: none;
+  opacity: 0;
+}
+header .login .logado {
+  transition: all 0.8s;
+  opacity: 1;
+  background-color: #c27abd;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 2.8rem;
+  border-radius: 15px;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+}
+header .login .logado a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #c7e9fb;
+  background-image: linear-gradient(315deg, #c7e9fb 0%, #e61d8c 74%);
+}
+.container #cadastro {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 2px gray solid;
+  background-color: lightblue;
+  border-radius: 15px;
+  box-shadow: 2px 2px 30px 15px rgba(0, 0, 0, 0.6);
+}
+.container #cadastro .redes-sociais {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+.container #cadastro .redes-sociais img {
+  cursor: pointer;
+  transition: all 0.8s;
+}
+.container #cadastro .redes-sociais img:hover {
+  transform: rotate(45deg);
+}
+.container #cadastro .input {
+  margin-bottom: 5%;
+  outline: none;
+  width: 50%;
+  height: 2.3rem;
+  background-color: #eee;
+  border: none;
+  padding: 1.4rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+}
+.container #cadastro .input:focus {
+  outline-color: lightcoral;
+}
+.container #cadastro .input::-moz-placeholder {
+  color: lightcoral;
+}
+.container #cadastro .input::placeholder {
+  color: lightcoral;
+}
+.container #cadastro .input button {
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  height: 2.5rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 15px;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+.container #cadastro .input button.subForm {
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.container #cadastro .input button.subForm::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f9c4d2;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.container #cadastro .input button.subForm:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.25em);
+}
+.container #cadastro .input button.subForm:hover::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.5em, -1em);
+}
+.container #cadastro .input button.subForm:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+.container #cadastro .input button.subForm:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
+}
+.container #cadastro label {
+  width: 50%;
+  text-align: start;
+  font-size: large;
+  font-weight: 500;
+}
+.container #cadastro button {
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  height: 2.5rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 15px;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+.container #cadastro button.subForm {
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.container #cadastro button.subForm::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f9c4d2;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.container #cadastro button.subForm:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.25em);
+}
+.container #cadastro button.subForm:hover::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.5em, -1em);
+}
+.container #cadastro button.subForm:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+.container #cadastro button.subForm:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
+}
+
+.container #login {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 35%;
+  border: thin solid black;
+  background-color: lightblue;
+  border-radius: 6px;
+  position: relative;
+}
+.container #login .seePass {
+  position: absolute;
+  right: 4rem;
+  top: 9.3rem;
+  cursor: pointer;
+}
+.container #login .input {
+  outline: none;
+  width: 50%;
+  height: 2.3rem;
+  background-color: #eee;
+  border: none;
+  padding: 1.4rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+  width: 80%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+}
+.container #login .input:focus {
+  outline-color: lightcoral;
+}
+.container #login .input::-moz-placeholder {
+  color: lightcoral;
+}
+.container #login .input::placeholder {
+  color: lightcoral;
+}
+.container #login .input button {
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  height: 2.5rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 15px;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+.container #login .input button.subForm {
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.container #login .input button.subForm::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f9c4d2;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.container #login .input button.subForm:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.25em);
+}
+.container #login .input button.subForm:hover::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.5em, -1em);
+}
+.container #login .input button.subForm:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+.container #login .input button.subForm:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
+}
+.container #login label {
+  width: 50%;
+  text-align: start;
+  font-size: large;
+  font-weight: 500;
+  margin-left: 3%;
+}
+.container #login .redes-sociais {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.container #login .redes-sociais img {
+  cursor: pointer;
+  transition: all 0.8s;
+}
+.container #login .redes-sociais img:hover {
+  transform: rotate(45deg);
+}
+.container #login button {
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  height: 2.5rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 15px;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+.container #login button.subForm {
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.container #login button.subForm::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f9c4d2;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.container #login button.subForm:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.25em);
+}
+.container #login button.subForm:hover::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.5em, -1em);
+}
+.container #login button.subForm:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+.container #login button.subForm:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
+}
+
+main .scrool {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: scroll;
+}
+main .scrool .item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.6);
+  width: 18rem;
+}
+main .scrool .item img {
+  border-bottom: thin solid black;
+  margin-bottom: 8%;
+}
+main .scrool .item .acoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .scrool .item .acoes .box {
+  width: 140px;
+  height: auto;
+  float: left;
+  transition: 0.5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+main .scrool .item .acoes .box:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+main .scrool .item .acoes .box:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+main .scrool .item .acoes .box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+main .scrool .item .acoes .box:hover:before {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+}
+main .scrool .item .acoes .box:hover:after {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.5s;
+}
+main .scrool .item .acoes button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+main .scrool .item img {
+  width: 18rem;
+  height: 18rem;
+}
+
+.bodyMyAccount {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.bodyMyAccount .container-account {
+  width: 20%;
+  height: 35%;
+  border: thin solid gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ruwudu;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+{
+    "name": "escola/escola",
+    "autoload": {
+        "psr-4": {
+            "Escola\\Escola\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bros12Lek",
+            "email": "adgamesbalhego@hotmail.com"
+        }
+    ],
+    "require": {}
+}
