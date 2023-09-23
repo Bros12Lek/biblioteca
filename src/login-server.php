@@ -8,10 +8,6 @@ require_once "./src/mysqlConnection.php";
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-if(!isset($_SESSION['login'])){
-    $_SESSION['login'] = "deslogado";
-};
-
 $querry = "SELECT * FROM usuarios WHERE email = :email";
 $statement = $pdo->prepare($querry);
 $statement->bindValue(":email", $email, PDO::PARAM_STR);

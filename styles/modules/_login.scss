@@ -53,7 +53,7 @@
             border-radius: 10px;
             border: none;
             height: 2.5rem;
-            position: relative;
+            position: absolute;
             display: inline-block;
             cursor: pointer;
             outline: none;
@@ -62,9 +62,20 @@
             text-decoration: none;
             font-family: inherit;
             font-size: 15px;
-            margin-top: 3%;
-            margin-bottom: 10%;
-            margin-left: 5%;
+            bottom: 3.4rem;
+            left: 1.8rem;
+        }
+
+        .facaConta{
+            position: absolute;
+            bottom: 0;
+            left: 1.8rem;
+            font-size: large;
+            a{
+                text-decoration: none;
+                color: rgb(27, 27, 235);
+                font-size: large;
+            }
         }
         button.subForm {
             font-weight: 600;

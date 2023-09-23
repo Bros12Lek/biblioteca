@@ -24,6 +24,8 @@
         <img width="48" height="48" src="https://img.icons8.com/stickers/100/instagram-new--v2.png" alt="instagram-new--v2"/>
         <img width="48" height="48" src="https://img.icons8.com/officel/40/linkedin.png" alt="linkedin"/>
       </section>
+      <p class="p">Já possui uma conta? <a href="./login.php">Faça o seu login !</a></p>
+    </form>  
   </div>
   <script src="./src/passwordConfirm.js"></script>
 </body>

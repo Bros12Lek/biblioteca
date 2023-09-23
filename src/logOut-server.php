@@ -13,6 +13,8 @@ if(isset($_SESSION['usuario'])){
     session_destroy();
 }
 
+session_start();
+
 if(!isset($_SESSION['login']) || !isset($_SESSION['usuario'])){
     $_SESSION['login'] = "deslogado";
     $_SESSION['usuario'] = "usuario_anonimo"; 
@@ -20,3 +22,5 @@ if(!isset($_SESSION['login']) || !isset($_SESSION['usuario'])){
     echo "<br>";
     echo $_SESSION['usuario'];
 }
+
+header("Location:../");

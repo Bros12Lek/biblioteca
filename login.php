@@ -19,6 +19,7 @@
                 <img width="48" height="48" src="https://img.icons8.com/officel/40/linkedin.png" alt="linkedin"/> 
             </section>
             <button class="subForm" type="submit">Login</button>
+            <p class="facaConta" >Não possui conta? <a href="./cadastro.php">Faça uma clicando aqui !</a></p>
         </form>
     </div>
     <script src="./src/passwordShow.js"></script>
