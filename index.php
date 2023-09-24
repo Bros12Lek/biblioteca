@@ -9,6 +9,9 @@
 
  $res = $pdo->query($querry);
  $array = $res->fetchAll(PDO::FETCH_ASSOC);
+ if(!isset($_SESSION['login'])){
+    $_SESSION['login'] = "deslogado";
+ }
  
 ?>
 

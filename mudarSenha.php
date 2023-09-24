@@ -6,7 +6,16 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Mudar Senha - Melhor Leitura</title>
 </head>
-<body>
-    
+<body style="height: 100vh;" >
+    <div class="container">
+        <form id="mudarSenha" action="./src/mudarSenha-server.php" method="post">
+            <label for="senha">Nova Senha</label>
+            <input required id="senha" type="password" name='senha' placeholder="Digite sua nova senha">
+            <label for='passwordRepeat'>Confirmar senha</label>
+            <input required id="passwordRepeat" type="password" name='passwordRepeat' placeholder="Confirme a nova senha">
+            <button class="subForm" type="submit">Mudar Senha</button>
+        </form>
+    </div>
+    <script src="./src/passwordChange.js"></script>
 </body>
 </html>

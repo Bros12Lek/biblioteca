@@ -18,6 +18,7 @@ $array = $statement->fetch(PDO::FETCH_ASSOC);
 if(password_verify($senha,$array['senha'])){
    $_SESSION['usuario'] = $array['nome'];
    $_SESSION['login'] = "logado";
+   $_SESSION['email'] = $array['email'];
    header("Location:../index.php");
    
 }else{
