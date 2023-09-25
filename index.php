@@ -45,6 +45,11 @@
         </div>
     </header>
     <main>
+        <form id="procura" action="./src/procura-server.php" method="get">
+            <input name="pesquisa" id="pesquisa" type="text" placeholder="Faça a sua pesquisa pelo livro" >
+            <button type="submit"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1"/></button>
+        </form>
+
         <section class="scrool">
             <?php foreach($array as $value):?>
                <div class="item">
